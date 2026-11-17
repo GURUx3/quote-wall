@@ -1,0 +1,308 @@
+:root {
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  color: #f2f2f2;
+  background: #0b0b0b;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  background: #0b0b0b;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+}
+
+button {
+  border: 1px solid #f2f2f2;
+  border-radius: 9px;
+  padding: 0.72rem 1rem;
+  color: #111;
+  background: #f2f2f2;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 120ms ease, color 120ms ease;
+}
+
+button:hover:not(:disabled) {
+  background: #d7d7d7;
+}
+
+button:disabled {
+  cursor: wait;
+  opacity: 0.6;
+}
+
+.page {
+  width: min(100% - 3rem, 36rem);
+  min-height: 100vh;
+  margin: 0 auto;
+  padding: 2.25rem 0 2rem;
+}
+
+.site-header,
+.user-actions,
+.form-footer,
+.quote-card footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.site-header {
+  margin-bottom: 4.5rem;
+}
+
+h1,
+h2,
+p {
+  margin-top: 0;
+}
+
+h1 {
+  margin-bottom: 0;
+  font-size: 1rem;
+  font-weight: 650;
+  letter-spacing: -0.02em;
+}
+
+h2 {
+  margin-bottom: 0.55rem;
+  font-size: 1.15rem;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.muted,
+.quote-card time {
+  color: #8c8c8c;
+}
+
+.muted {
+  margin-bottom: 0;
+  font-size: 0.9rem;
+  line-height: 1.55;
+}
+
+.auth-card {
+  max-width: 25rem;
+  margin: 0 auto 5rem;
+}
+
+.auth-card h2 {
+  margin-bottom: 0.5rem;
+  font-size: clamp(1.7rem, 5vw, 2rem);
+  font-weight: 600;
+  letter-spacing: -0.045em;
+}
+
+.stack {
+  display: grid;
+  gap: 1.15rem;
+  margin-top: 2rem;
+}
+
+label {
+  display: grid;
+  gap: 0.55rem;
+  color: #c8c8c8;
+  font-size: 0.83rem;
+  font-weight: 500;
+}
+
+input,
+textarea {
+  width: 100%;
+  border: 1px solid #303030;
+  border-radius: 8px;
+  padding: 0.8rem 0.85rem;
+  color: #f2f2f2;
+  background: #111;
+  font-size: 0.92rem;
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: #747474;
+}
+
+textarea {
+  min-height: 7rem;
+  resize: vertical;
+  line-height: 1.55;
+}
+
+input:focus,
+textarea:focus,
+button:focus-visible,
+.text-button:focus-visible {
+  outline: 2px solid #bdbdbd;
+  outline-offset: 3px;
+}
+
+.auth-submit {
+  width: 100%;
+  margin-top: 0.35rem;
+}
+
+.switch-mode {
+  margin: 1.4rem 0 0;
+  color: #8c8c8c;
+  font-size: 0.86rem;
+}
+
+.text-button {
+  border: 0;
+  padding: 0;
+  color: #f2f2f2;
+  background: transparent;
+  font-size: inherit;
+  font-weight: 500;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.text-button:hover:not(:disabled) {
+  color: #bdbdbd;
+  background: transparent;
+}
+
+.secondary-button {
+  border-color: #303030;
+  color: #dedede;
+  background: #151515;
+}
+
+.secondary-button:hover:not(:disabled) {
+  border-color: #555;
+  color: #fff;
+  background: #202020;
+}
+
+.quote-form-card {
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid #252525;
+}
+
+.quote-form-card h2 {
+  margin-bottom: 1.3rem;
+}
+
+.quote-form-card .stack {
+  margin-top: 0;
+}
+
+.form-footer {
+  margin-top: -0.2rem;
+}
+
+.feed {
+  margin-top: 0;
+}
+
+.feed > h2 {
+  margin-bottom: 0.5rem;
+  font-size: 0.92rem;
+  font-weight: 500;
+  color: #9a9a9a;
+}
+
+.quote-list {
+  display: grid;
+  margin-top: 0.6rem;
+}
+
+.quote-card {
+  padding: 1.4rem 0;
+  border-bottom: 1px solid #252525;
+}
+
+.quote-card blockquote {
+  margin: 0 0 1.15rem;
+  color: #e7e7e7;
+  font-size: 1.08rem;
+  line-height: 1.65;
+  white-space: pre-wrap;
+  overflow-wrap: anywhere;
+}
+
+.quote-card footer {
+  color: #a7a7a7;
+  font-size: 0.84rem;
+}
+
+.quote-card time {
+  font-size: 0.82rem;
+}
+
+.empty-state {
+  margin-top: 1.1rem;
+  padding: 1.25rem 0;
+  color: #777;
+  font-size: 0.9rem;
+}
+
+.notice {
+  border-left: 2px solid #777;
+  padding: 0.65rem 0.8rem;
+  color: #d2d2d2;
+  background: #151515;
+  font-size: 0.87rem;
+  line-height: 1.5;
+}
+
+.notice.error {
+  border-color: #b56b6b;
+  color: #e7b6b6;
+}
+
+.notice.success {
+  border-color: #729b7b;
+  color: #b8d5be;
+}
+
+.page-footer {
+  margin-top: 4rem;
+  color: #666;
+  font-size: 0.78rem;
+}
+
+@media (max-width: 520px) {
+  .page {
+    width: min(100% - 2rem, 36rem);
+    padding-top: 1.5rem;
+  }
+
+  .site-header {
+    align-items: flex-start;
+    margin-bottom: 3.5rem;
+  }
+
+  .user-actions {
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 0.6rem;
+  }
+
+  .quote-card footer {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+}
