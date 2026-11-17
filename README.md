@@ -72,6 +72,11 @@ The `quotes` table has an `author_name` field so the public feed can show a name
 | `package.json` | Lists dependencies and useful commands. |
 | `CONTRIBUTING.md` | Explains how to make and submit a contribution. |
 
+
+
 ## Contributing
 
 New contributors are welcome. You can improve the docs, fix a bug, or pick a beginner-friendly issue. Read [`CONTRIBUTING.md`](CONTRIBUTING.md) for a step-by-step guide to forking, branching, committing, and opening a pull request.
+
+
+Maintained by Guru-09092004.
