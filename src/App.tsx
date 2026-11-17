@@ -47,7 +47,7 @@ export default function App() {
       const { data, error } = await client
         .from('quotes')
         .select('id, content, author_name, created_at')
-        .order('created_at', { ascending: false })
+        .order('created_at', { ascending: true })
 
       if (error) {
         setFeedError(error.message)

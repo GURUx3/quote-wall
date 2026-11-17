@@ -52,7 +52,7 @@ export function QuoteForm({ onPost }: QuoteFormProps) {
           value={content}
         />
         <div className="form-footer">
-          <span className="muted">{content.length}/300</span>
+          <span className="muted">{content.length + 1}/300</span>
           <button disabled={isSubmitting} type="submit">
             {isSubmitting ? 'Posting...' : 'Post'}
           </button>
